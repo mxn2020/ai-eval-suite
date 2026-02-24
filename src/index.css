@@ -1,0 +1,47 @@
+/* AI Eval Suite — QA Cerulean & Paper White */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+:root, [data-theme="light"] {
+  --color-bg-primary: #F8FAFC; --color-bg-secondary: #F1F5F9; --color-bg-tertiary: #E2E8F0;
+  --color-bg-card: #FFFFFF; --color-bg-hover: rgba(2,132,199,0.06);
+  --color-text-primary: #0F172A; --color-text-secondary: #475569; --color-text-tertiary: #94A3B8;
+  --color-text-inverse: #FFFFFF;
+  --color-accent-primary: #0284C7; --color-accent-secondary: #0369A1; --color-accent-tertiary: #075985;
+  --color-accent-soft: rgba(2,132,199,0.12);
+  --color-border: rgba(15,23,42,0.1); --color-border-strong: rgba(15,23,42,0.2);
+  --color-success: #059669; --color-warning: #D97706; --color-error: #DC2626;
+  --gradient-accent: linear-gradient(135deg, #0EA5E9 0%, #0284C7 100%);
+  --glass-bg: rgba(255,255,255,0.85); --card-shadow: 0 2px 4px -1px rgba(0,0,0,0.05), 0 1px 2px -1px rgba(0,0,0,0.03);
+}
+[data-theme="dark"] {
+  --color-bg-primary: #0B1120; --color-bg-secondary: #1E293B; --color-bg-tertiary: #334155;
+  --color-bg-card: #0F172A; --color-bg-hover: rgba(56,189,248,0.08);
+  --color-text-primary: #F8FAFC; --color-text-secondary: #CBD5E1; --color-text-tertiary: #64748B;
+  --color-text-inverse: #0B1120;
+  --color-accent-primary: #38BDF8; --color-accent-secondary: #7DD3FC; --color-accent-tertiary: #0284C7;
+  --color-accent-soft: rgba(56,189,248,0.15);
+  --color-border: rgba(248,250,252,0.1); --color-border-strong: rgba(248,250,252,0.2);
+  --glass-bg: rgba(15,23,42,0.9); --card-shadow: 0 4px 6px -1px rgba(0,0,0,0.4);
+}
+:root {
+  --font-family: 'Plus Jakarta Sans', sans-serif; --font-mono: 'JetBrains Mono', monospace;
+  --font-size-xs: 0.75rem; --font-size-sm: 0.875rem; --font-size-base: 1rem; --font-size-lg: 1.125rem; --font-size-xl: 1.25rem; --font-size-2xl: 1.5rem;
+  --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem;
+  --radius-sm: 6px; --radius-md: 10px; --radius-lg: 16px; --transition-fast: 0.2s ease; --sidebar-width: 250px;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-family); background: var(--color-bg-primary); color: var(--color-text-primary); min-height: 100vh; }
+a { color: inherit; text-decoration: none; } button { font-family: inherit; cursor: pointer; }
+.card { background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-md); box-shadow: var(--card-shadow); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2); padding: var(--space-2) var(--space-4); border-radius: var(--radius-sm); font-weight: 600; font-size: var(--font-size-sm); border: 1px solid var(--color-border); background: var(--color-bg-card); color: var(--color-text-primary); transition: all var(--transition-fast); }
+.btn:hover { border-color: var(--color-border-strong); background: var(--color-bg-hover); }
+.btn-primary { background: var(--color-accent-primary); color: var(--color-text-inverse); border-color: var(--color-accent-primary); }
+.btn-primary:hover { background: var(--color-accent-secondary); }
+.btn-ghost { background: transparent; border: none; }
+.btn-sm { padding: var(--space-1) var(--space-3); font-size: var(--font-size-xs); }
+.badge { display: inline-flex; align-items: center; padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+.badge-blue { background: rgba(2,132,199,0.15); color: var(--color-accent-primary); }
+.badge-green { background: rgba(5,150,105,0.15); color: var(--color-success); }
+.badge-red { background: rgba(220,38,38,0.15); color: var(--color-error); }
+.input, .textarea { width: 100%; padding: var(--space-2) var(--space-3); background: var(--color-bg-secondary); border: 1px solid var(--color-border); border-radius: var(--radius-sm); color: var(--color-text-primary); font-family: inherit; font-size: var(--font-size-sm); }
+.input:focus, .textarea:focus { outline: none; border-color: var(--color-accent-primary); box-shadow: 0 0 0 2px var(--color-accent-soft); }
+.mono { font-family: var(--font-mono); }

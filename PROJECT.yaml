@@ -1,0 +1,13 @@
+id: 92607aad-001f-4619-a2b3-bcd4c09e24f1
+name: ai-eval-suite
+description: React + TypeScript + Vite
+tier: prototype
+lane: oss
+priority: medium
+oss: false
+stack: [typescript, react, convex, vite]
+repo: "https://github.com/mxn2020/ai-eval-suite"
+deploy_url: null
+last_active: 2026-02-24
+tags: []
+notes: 

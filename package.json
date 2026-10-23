@@ -40,7 +40,7 @@
   },
   "description": "AI model evaluation suite for benchmarking and comparing LLM outputs",
   "author": "Mehdi Nabhani",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "keywords": [
     "ai",
     "eval",
